@@ -1,0 +1,11 @@
+:root {
+    --font-high-emphasis: rgba(37, 40, 43, 1);
+    --font-medium-emphasis: rgba(130, 130, 130, 1);
+    --title-h1-font-family: "Playfair Display", Helvetica;
+    --title-h1-font-weight: 700;
+    --title-h1-font-size: 64px;
+    --title-h1-letter-spacing: 0px;
+    --title-h1-line-height: 120.00000476837158%;
+    --title-h1-font-style: normal;
+  }
+  
