@@ -20,7 +20,7 @@ function updatetext() {
     el.textContent = owl;
   }
 
-// Calls the function
+// Calls the function in infinite loop
 setInterval(function() {
     updateMessage1();
 }, 2000);
@@ -32,5 +32,3 @@ setInterval(function() {
 setInterval(function() {
     updatetext();
 }, 6000);
-
-

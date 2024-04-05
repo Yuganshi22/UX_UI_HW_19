@@ -1,98 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Actor:wght@400&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno:wght@400&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" />
+<link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".resume-button").hover(
+      function() {
+        // Mouse enter - add hover effect
+        $(this).addClass("resume-button-hover");
+      },
+      function() {
+        // Mouse leave - remove hover effect
+        $(this).removeClass("resume-button-hover");
+      }
+    );
+  });
+</script>
+<script>
+  $(document).ready(function() {
+  // Add hover effect to dream center image
+  $('.dreamcenter-border').hover(
+    function() {
+      // Change background image
+      
+      // Show the "View Case Study" button
+      $(this).find('.view-case-study-btn').fadeIn();
+    },
+    function() {
+      // Restore initial background image
+      
+      // Hide the "View Case Study" button
+      $(this).find('.view-case-study-btn').fadeOut();
+    }
+  );
+});
+</script>
+</head>
+  
   <body>
-    <div class="landing-page">
-      <div class="overlap-wrapper">
-        <div class="overlap">
-          <img class="hero-img" src="img/hero-img.png" />
-          <div class="carrot">
-            <div class="overlap-group">
-              <img class="line" src="img/line-1.svg" /> <img class="img" src="img/line-2.svg" />
+    <div class="main-container">
+      <div class="flex-row-a">
+        <div class="white-black-modern">
+          <div class="rectangle">
+            <div class="component">
+              <span class="concept-artist">Concept Artist</span
+              ><span class="ui-ux-designer">UI/UX Designer</span
+              ><span class="digital-designer">Digital Designer</span>
             </div>
           </div>
-          <img class="yd" src="img/yd.svg" />
-          <div class="rectangle"></div>
-          <img class="icon-linkedin" src="img/icon-linkedin.png" />
-          <img class="icon-github" src="img/icon-github.png" />
-          <div class="frame">
-            <div class="group">
-              <div class="div">
-                <div class="overlap-2">
-                  <div class="overlap-group-2">
-                    <div class="ellipse"></div>
-                    <div class="text-wrapper">e</div>
-                    <img class="vector" src="img/Vector-10.png" />
-                  </div>
-                  <div class="text-wrapper-2">o</div>
-                  <div class="text-wrapper-3">n</div>
-                  <div class="text-wrapper-4">T</div>
-                  <div class="text-wrapper-5">h</div>
-                  <div class="overlap-3">
-                    <div class="text-wrapper-6">B</div>
-                    <div class="text-wrapper-7">u</div>
-                  </div>
-                  <div class="overlap-4">
-                    <div class="text-wrapper-8">g</div>
-                    <div class="text-wrapper-9">s</div>
-                  </div>
-                  <div class="text-wrapper-10">t</div>
-                </div>
-                <div class="overlap-5">
-                  <div class="overlap-6">
-                    <div class="text-wrapper-11">o</div>
-                    <div class="text-wrapper-12">v</div>
-                    <div class="text-wrapper-13">e</div>
-                  </div>
-                  <div class="text-wrapper-14">r</div>
-                </div>
-                <div class="text-wrapper-15">o</div>
-                <div class="text-wrapper-16">i</div>
-                <div class="text-wrapper-17">x</div>
-              </div>
-              <div class="text-wrapper-18">H</div>
-              <div class="text-wrapper-19">F</div>
-              <div class="text-wrapper-20">•</div>
-            </div>
-          </div>
-          <p class="p">Want to see my artworks? Scroll.</p>
-          <div class="vector-wrapper"><img class="vector-2" src="img/Vector-9.png" /></div>
-          <div class="component">
-            <div class="text-wrapper-21">Digital Designer</div>
-            <div class="text-wrapper-22">Concept Artist</div>
-            <div class="text-wrapper-23">UI/UX Designer</div>
-          </div>
-          <div class="nav-bar">
-            <div class="tab"><div class="page">About</div></div>
-            <div class="page-wrapper"><div class="page">Work</div></div>
-            <div class="div-wrapper"><div class="page">Skills</div></div>
-            <div class="tab-2"><div class="page-2">Contact</div></div>
-          </div>
-          <div class="title">Hi! <br />I am Yuganshi<br />Creative</div>
-          <div class="subheadline">
-            <p class="text">
-                I strive to create meaningful and delightful experiences for users & explore my portfolio to see how I can help bring your digital products to life.
-            </p>
-          </div>
-          <div class="dreamcenter-button"><div class="view">About</div></div>
-          <div class="landing-info">
-            <div class="UX-UI-designer-wrapper">
-              <div class="UX-UI-designer"><h2 id="message-text"></h2></div>
-              
-              
-            </div>
-          </div>
-          <div class="resume-button"><div class="text-wrapper-24">Resume</div></div>
+        </div>
+        <div class="tab"><span class="page-about">About</span></div>
+        <div class="tab-1"><span class="page-work">Work</span></div>
+        <div class="tab-2"><span class="page-skills">Skills</span></div>
+        <div class="tab-3"><span class="page-contact">Contact</span></div>
+      </div>
+      <div class="flex-row-df">
+        <div class="title">Hi! <br />I am Yuganshi<br /> Creative <br /></div>
+        <div class="frame">
+          <span class="ux-ui-designer"><br /><h2 id="message-text"></h2></span
+          >
+
+
         </div>
       </div>
+      <div class="subheadline">
+        <span class="text"
+          >I strive to create meaningful and delightful experiences for users &
+          explore my portfolio to see how I can help bring your digital products
+          to life.</span
+        >
+      </div>
+      <div class="flex-row-f">
+        <a href="https://www.canva.com/design/DAF-QdxU3wM/C_WIcoUCv1FptuwnYN0hpw/view?utm_content=DAF-QdxU3wM&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="resume-button"><span class="resume">Resume</span></a>
+        <button class="dreamcenter-button">
+          <span class="view">About</span>
+        </button>
+        
+      </div>
+      <div class="flex-row-e">
+        <div class="icon-linkedin"><div class="vector"></div></div>
+        <div class="icon-github"><div class="vector-4"></div></div>
+        <span class="i">i</span><span class="f">F</span><span class="x">x</span
+        ><span class="o">o</span>
+      </div>
+      <div class="flex-row-a-5">
+        <span class="t">t</span><span class="bullet">•</span>
+      </div>
+      <div class="selected-projects">
+        <span class="selected-projects-6"
+          >Some of my selected projects Some of my selected projects Some of my
+          selected projects Some of my selected projects</span
+        >
+        <div class="vector-7"></div>
+        <div class="vector-8"></div>
+        <div class="vector-9"></div>
+        <div class="vector-a"></div>
+      </div>
+      <div class="flex-row">
+        <div class="cuesine-border"><div class="cuesine-img"></div></div>
+        <div class="dreamcenter-border">
+          
+          
+          <div class="dreamcenter-proj-img"></div>
+            
+          <a href="https://yuganshi22.github.io/UX_UI_HW_20/" target="_blank" class="view-case-study-btn"><span class="view-case-study">view-case-study</span></a>
+        </div>
+        <div class="instatravel-border">
+          <div class="instatravel-img"></div>
+        </div>
+      </div>
+      <div class="flex-row-fe">
+        <span class="f-b">F</span><span class="i-c">i</span>
+      </div>
+      <span class="x-d">x</span><span class="o-e">o</span>
+      <div class="flex-row-">
+        <span class="t-f">t</span><span class="dot">•</span>
+      </div>
+      <div class="flex-row-b">
+        <div class="ellipse"></div>
+        <span class="s">s</span><span class="h">H</span><span class="g">g</span>
+        <div class="vector-10"></div>
+        <span class="o-11">o</span><span class="u">u</span
+        ><span class="v">v</span><span class="b">B</span
+        ><span class="e">e</span>
+      </div>
+      <div class="flex-row-eec">
+        <span class="r">r</span>
+        <div class="vector-12">
+          <div class="vector-13"><div class="vector-14"></div></div>
+        </div>
+        <span class="e-15">e</span><span class="h-16">h</span
+        ><span class="scroll">Want to know more about me? Scroll.</span>
+        <div class="carrot">
+          <div class="flex-row-dc">
+            <span class="t-17">T</span><span class="o-18">o</span>
+          </div>
+          <span class="n">n</span>
+        </div>
+      </div>
+      <span class="my-background">My Background</span>
+      <div class="flex-row-af">
+        <div class="portrait-pic-me"></div>
+        <div class="journey">
+          <span class="journey-19"
+            >My journey from fashion design to UI/UX was a natural transition,
+            where my expertise in visual storytelling and aesthetics paved the
+            way for digital design. What excites me about UI/UX is its fusion of
+            beauty and functionality, creating immersive experiences that
+            resonate with users. Rooted in fashion, I bring a deep understanding
+            of visual communication to my design approach.<br /></span
+          ><span class="journey-1a"><br /></span
+          ><span class="journey-1b"
+            >Driven by a passion for leveraging technology to enhance human
+            experiences, I'm fascinated by the intersection of art and
+            technology in solving real-world problems. My nomadic lifestyle has
+            broadened my perspective, fueling curiosity and a willingness to
+            explore new ideas.<br /></span
+          ><span class="journey-1c"><br /></span
+          ><span class="journey-1d"
+            >My strength lies in blending artistic creativity with user-centered
+            design principles, always eager to learn and adapt in this rapidly
+            evolving field. While I'm relatively new to UI/UX, my enthusiasm and
+            dedication compensate for any lack of experience.<br /></span
+          ><span class="journey-1e"><br /></span
+          ><span class="journey-1f"
+            >I'm drawn to projects that challenge conventions, whether
+            collaborating with startups or established companies. Excited to
+            contribute and grow in the world of UI/UX design, I'm committed to
+            making a meaningful impact.<br
+          /></span>
+        </div>
+        <button class="resume-button-20">
+          <span class="resume-21">Resume</span>
+        </button>
+        <div class="subheadline-22">
+          <span class="text-23">My Mantra:</span>
+        </div>
+        <div class="subheadline-24">
+          <span class="mantra">“Precision in simplicity”</span>
+        </div>
+      </div>
+      <div class="flex-row-25">
+        <span class="f-26">F</span><span class="i-27">i</span>
+      </div>
+      <span class="x-28">x</span><span class="o-29">o</span>
+      <div class="flex-row-f-2a">
+        <span class="t-2b">t</span><span class="bullet-2c">•</span>
+      </div>
+      <div class="flex-row-ddfb">
+        <div class="ellipse-2d"></div>
+        <span class="s-2e">s</span><span class="h-2f">H</span
+        ><span class="g-30">g</span>
+        <div class="vector-31"></div>
+        <div class="vector-32">
+          <div class="vector-33"><div class="vector-34"></div></div>
+        </div>
+        <span class="o-35">o</span><span class="u-36">u</span
+        ><span class="skills-scroll">Want to see my Skills? Scroll.</span
+        ><span class="v-37">v</span><span class="b-38">B</span
+        ><span class="e-39">e</span>
+      </div>
+      <span class="r-3a">r</span><span class="e-3b">e</span>
+      <div class="flex-row-ad">
+        <span class="h-3c">h</span>
+        <div class="carrot-3d">
+          <div class="flex-row-d">
+            <span class="t-3e">T</span><span class="o-3f">o</span>
+          </div>
+          <span class="n-40">n</span>
+        </div>
+      </div>
+      <span class="sets-apart">WHAT SETS ME APART</span>
+      <div class="flex-row-a-41">
+        <div class="interactiondesign-img"></div>
+        <div class="visualdesign-img"></div>
+        <div class="prototyping-img">
+          <span class="prototyping">Prototyping</span>
+        </div>
+        <div class="userresearch-img"></div>
+        <span class="visual-design">Visual Design</span
+        ><span class="interaction-design">Interaction Design</span
+        ><span class="user-research">User Research</span>
+      </div>
+      <div class="subheadline-42">
+        <div class="text-43">
+          <span class="span">&</span
+          ><span class="level-of-skills"> my level of Skills </span>
+        </div>
+      </div>
+      <span class="skills-list"
+        >Figma | HTML 5 | CSS | Java Script | jQuery | Bootstrap | Visual Studio Code | Git |
+        GitHub</span
+      >
+      <div class="flex-row-c">
+        <span class="f-44">F</span><span class="i-45">i</span>
+      </div>
+      <span class="x-46">x</span><span class="o-47">o</span>
+      <div class="flex-row-ce">
+        <span class="t-48">t</span><span class="bullet-49">•</span>
+      </div>
+      <div class="flex-row-d-4a">
+        <div class="ellipse-4b"></div>
+        <span class="s-4c">s</span><span class="h-4d">H</span
+        ><span class="g-4e">g</span>
+        <div class="vector-4f"></div>
+        <span class="o-50">o</span>
+        <div class="vector-51">
+          <div class="vector-52"><div class="vector-53"></div></div>
+        </div>
+        <span class="u-54">u</span
+        ><span class="connect">Want to connect with me ? Scroll.</span
+        ><span class="v-55">v</span><span class="b-56">B</span
+        ><span class="e-57">e</span>
+      </div>
+      <span class="r-58">r</span><span class="e-59">e</span>
+      <div class="flex-row-a-5a">
+        <span class="h-5b">h</span>
+        <div class="carrot-5c">
+          <div class="flex-row-f-5d">
+            <span class="t-5e">T</span><span class="o-5f">o</span>
+          </div>
+          <span class="n-60">n</span>
+        </div>
+      </div>
+      <span class="project-in-mind">Have a project in mind?</span
+      ><span class="lets-connect">Let’s Connect </span
+      ><span class="drop-email">Drop me an Email:</span>
+      <div class="frame-61">
+        <span class="hear-from-you">I'd love to hear from you!</span
+        ><span class="email">Yuganshidhingra@gmail.com</span>
+      </div>
+      <div class="footer-background">
+        <div class="flex-row-62">
+          <span class="title-63">Yuganshi Dhingra</span
+          ><span class="important-links">Important Links</span
+          ><span class="contact-info">Contact Info</span
+          ><span class="social-links">Social Links</span>
+          <div class="icon-linkedin-64"><div class="vector-65"></div></div>
+          <div class="icon-github-66"><div class="vector-67"></div></div>
+          <span class="title-68">Home<br />About<br />Work<br />Skills</span
+          ><span class="title-69"
+            >yuganshidhingra@gmail.com<br />California</span
+          >
+          <div class="fontisto-email"><div class="vector-6a"></div></div>
+          <div class="gridicons-location"><div class="vector-6b"></div></div>
+        </div>
+        <span class="title-6c"
+          >UX/UI Designer <br />Explore my portfolio to see how I can help bring
+          your digital products to life.</span
+        >
+      </div>
+      <div class="flex-row-a-6d">
+        <div class="group"></div>
+        <span class="yuganshi-dhingra">Yuganshi Dhingra 2024</span>
+      </div>
+      <div class="hero-img"></div>
+      <div class="flex-row-ec">
+        <div class="ellipse-6e"></div>
+        <span class="s-6f">s</span><span class="h-70">H</span
+        ><span class="g-71">g</span>
+        <div class="vector-72"></div>
+        <span class="o-73">o</span><span class="u-74">u</span
+        ><span class="v-75">v</span><span class="b-76">B</span
+        ><span class="e-77">e</span>
+      </div>
+      <div class="flex-row-e-78">
+        <div class="vector-79">
+          <div class="vector-7a"><div class="vector-7b"></div></div>
+        </div>
+        <span class="r-7c">r</span><span class="e-7d">e</span
+        ><span class="h-7e">h</span>
+        <div class="carrot-7f">
+          <div class="flex-row-dc-80">
+            <span class="t-81">T</span><span class="o-82">o</span>
+          </div>
+          <span class="n-83">n</span>
+        </div>
+      </div>
+      <button class="want-to-see-my-work">Want to see my Work? Scroll.</button>
+      <div class="hero-img-84"></div>
+      <div class="hero-img-85"></div>
+      <div class="hero-img-86"></div>
+      <div class="hero-img-87"></div>
+      <div class="hero-img-88"></div>
+      <div class="hero-img-89"></div>
     </div>
-    
-
     <script src="js/main.js"></script>
   </body>
-</html>
+
